@@ -19,8 +19,8 @@ if __name__ == "__main__":
 """
 import random
 def main():
-    user_score = float(input("Score: "))
-    print(get_score_grade(user_score))
+    score = float(input("Score: "))
+    print(get_score_grade(score))
     random_score = random.uniform(0,100)
     print(f"Random score: {random_score:.2f}, Level: {get_score_grade(random_score)}")
 
@@ -30,9 +30,9 @@ def get_score_grade(score):
     elif score >= 90:
         return "Excellent"
     elif score >= 50:
-        return "Pass"
+        return "Passable"
     else:
-        return "Fail"
+        return "Bad"
 
 if __name__ == '__main__':
     main()
