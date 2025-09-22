@@ -10,7 +10,7 @@ function main():
             get celsius
             get fahrenheit
             print "Result: {fahrenheit:.2f} F"
-        elif choice == "F":
+        else if choice == "F":
             get fahrenheit
             get celsius
             print "Result: {celsius:.2f} C"
