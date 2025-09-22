@@ -23,6 +23,7 @@ def main():
     print(get_score_grade(user_score))
     random_score = random.uniform(0,100)
     print(f"Random score: {random_score:.2f}, Level: {get_score_grade(random_score)}")
+
 def get_score_grade(score):
     if score <= 0 or score > 100:
         return "Invalid score"
@@ -32,5 +33,6 @@ def get_score_grade(score):
         return "Pass"
     else:
         return "Fail"
+
 if __name__ == '__main__':
     main()
