@@ -5,6 +5,7 @@ Answer the following questions:
 2. When will a ZeroDivisionError occur?
 3. Could you change the code to avoid the possibility of a ZeroDivisionError?
 """
+
 #1. When will a ValueError occur?
 
 #A ValueError occurs when the input for the numerator or denominator is not a valid integer (e.g., entering letters, special symbols, or other non-numeric content).
