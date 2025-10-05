@@ -51,6 +51,5 @@ def is_valid_password(password):
 
     return True
 
-
 if __name__ == "__main__":
     main()
