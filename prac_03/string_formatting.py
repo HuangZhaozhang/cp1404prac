@@ -32,13 +32,13 @@ numbers = [1, 19, 123, 456, -25]
 for i, number in enumerate(numbers, 1):
     print(f"Number {i} is {number:5}")
 
-# TODO: Use f-string formatting to produce the output:
+
 # 1922 Gibson L-5 CES for about $16,036!
 year = 1922
 model = "Gibson L-5 CES"
 cost = 16035.0
 print(f"{year} {model} for about ${cost:,.0f}!")
-# TODO: Using a for loop with the range function and f-string formatting,
+
 # produce the following right-aligned output (DO NOT use a list):
 for i in range(1, 11):
     power = 2 ** i
