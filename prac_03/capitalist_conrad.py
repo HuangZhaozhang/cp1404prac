@@ -41,7 +41,6 @@ while MIN_PRICE <= price <= MAX_PRICE:
 out_file.close()
 """
 import random
-
 # Define constants
 STARTING_PRICE = 10.00
 MIN_INCREASE = 0
