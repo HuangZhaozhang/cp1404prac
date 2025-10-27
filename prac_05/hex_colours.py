@@ -16,7 +16,6 @@ HEX_COLOURS = {
     "BLANCHEDALMOND": "#ffebcd",
     "BLUE": "#0000ff"
 }
-
 # Iterate through the dictionary and print all colour names and codes
 for code, name in HEX_COLOURS.items():
     print(f"{code} corresponds to {name}")

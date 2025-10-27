@@ -12,6 +12,7 @@ get sorted_words
 for word in sorted_words:
     print f "{word:<{max_length}} : {word_count[word]}"
 """
+
 # Record the string entered by the user
 text = input("Text: ")
 # Split the string into a list of words

@@ -26,7 +26,6 @@ for row in wimbledon_data:
         country_count[country] += 1
     else:
         country_count[country] = 1
-
 # Format and output the results
 print("=== Wimbledon Gentlemen's Singles Champions Statistics (1968-2022) ===")
 print("\n### Top 5 Champions by Number of Titles")
