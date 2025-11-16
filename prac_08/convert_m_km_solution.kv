@@ -1,0 +1,52 @@
+BoxLayout:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 10
+    # Title
+    Label:
+        text: 'Convert Miles to Kilometres'
+        font_size: 32
+        color: (1, 1, 1, 1)  # White text
+        size_hint_y: 0.2
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: 0.3
+        spacing: 10
+        TextInput:
+            id: input_miles
+            text: '34'
+            font_size: 48
+            multiline: False
+            background_color: (1, 1, 1, 1)  # White background
+            foreground_color: (0, 0, 0, 1)  # Black text
+            on_text: app.handle_calculate() # Real-time response to text changes
+        # The vertical layout of the up and down buttons
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_x: 0.25
+            spacing: 5
+            Button:
+                text: 'Up'
+                font_size: 24
+                background_color: (0.8, 0.8, 0.8, 1)  # Light grey button
+                color: (0, 0, 0, 1)  # Black words
+                on_press: app.handle_increment(1)
+            Button:
+                text: 'Down'
+                font_size: 24
+                background_color: 0.8, 0.8, 0.8, 1  # Light grey button
+                color: (0, 0, 0, 1)  # Black words
+                on_press: app.handle_increment(-1)
+#   Label:
+#        text: 'Convert m to km'
+         font_size: 24
+         color: 0.7, 0.7, 0.7, 1  # Grey text
+         size_hint_y: 0.1
+#        on_press: app.handle_calculate()
+    Label:
+        text: 'app.output_km'
+        id: output_label
+        font_size: 48
+        color: (1, 1, 0, 1)
+        size_hint_y: 0.3
+        background_color: 0, 0, 0, 1  # Black background
