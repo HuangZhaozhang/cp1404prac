@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}Search Wikipedia{% endblock %}
+{% block content %}
+    <h1>Search Wikipedia</h1>
+    <form method="post" action="">
+        <p>
+            <label>Search Wikipedia:
+                <input type="text" id="search" name="search" required>
+            </label>
+        </p>
+        <p>
+            <input type="submit" id="submit" value="Search">
+        </p>
+    </form>
+{% endblock %}
